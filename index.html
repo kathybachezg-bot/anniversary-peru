@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>3er Aniversario de Noviazgo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#faf8f5;
+color:#3a3a3a;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+background:
+linear-gradient(rgba(250,248,245,.95),rgba(250,248,245,.95)),
+url('https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.flag{
+width:120px;
+height:80px;
+display:flex;
+margin-bottom:20px;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.flag div:nth-child(1),
+.flag div:nth-child(3){
+background:#D91023;
+width:33.3%;
+}
+
+.flag div:nth-child(2){
+background:white;
+width:33.3%;
+}
+
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:4rem;
+color:#9b1c1c;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:1.2rem;
+margin-bottom:25px;
+}
+
+.heart{
+font-size:2rem;
+margin:10px 0;
+color:#c53030;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:25px;
+max-width:900px;
+width:100%;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.info{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.box{
+padding:20px;
+border:1px solid #eee;
+border-radius:15px;
+}
+
+.box h3{
+color:#b22222;
+margin-bottom:10px;
+}
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.time{
+background:#fff5f5;
+padding:15px;
+border-radius:15px;
+min-width:100px;
+}
+
+.number{
+font-size:2rem;
+font-weight:bold;
+color:#b22222;
+}
+
+.label{
+font-size:.8rem;
+text-transform:uppercase;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 28px;
+background:#b22222;
+color:white;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.balloon{
+position:fixed;
+right:5%;
+bottom:-150px;
+font-size:90px;
+animation:float 15s linear infinite;
+opacity:.9;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+}
+100%{
+transform:translateY(-120vh);
+}
+}
+
+.footer{
+margin-top:35px;
+font-style:italic;
+color:#777;
+}
+
+.map-container{
+margin-top:30px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:2.8rem;
+}
+
+.countdown{
+gap:10px;
+}
+
+.time{
+min-width:80px;
+}
+
+.number{
+font-size:1.5rem;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="balloon">🎈</div>
+
+<section class="hero">
+
+<div class="flag">
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+<h1>3er Aniversario</h1>
+
+<p class="subtitle">
+Una experiencia inspirada en Perú para celebrar nuestro amor
+</p>
+
+<div class="heart">❤️</div>
+
+<div class="card">
+
+<h2>Globo Aerostático • Perú 🇵🇪</h2>
+
+<div class="info">
+
+<div class="box">
+<h3>📅 Fecha</h3>
+<p>20 de junio de 2026</p>
+</div>
+
+<div class="box">
+<h3>🕔 Hora</h3>
+<p>17:15 a 18:45</p>
+</div>
+
+<div class="box">
+<h3>👕 Vestimenta</h3>
+<p>Casual</p>
+</div>
+
+<div class="box">
+<h3>📍 Lugar</h3>
+<p>Patio de Miraflores</p>
+<p>22 Avenida 4-32<br>Ciudad de Guatemala</p>
+</div>
+
+</div>
+
+<h2 style="margin-top:35px;color:#b22222;">
+⏳ Cuenta regresiva
+</h2>
+
+<div class="countdown">
+
+<div class="time">
+<div id="days" class="number">0</div>
+<div class="label">Días</div>
+</div>
+
+<div class="time">
+<div id="hours" class="number">0</div>
+<div class="label">Horas</div>
+</div>
+
+<div class="time">
+<div id="minutes" class="number">0</div>
+<div class="label">Minutos</div>
+</div>
+
+<div class="time">
+<div id="seconds" class="number">0</div>
+<div class="label">Segundos</div>
+</div>
+
+</div>
+
+<a class="btn"
+href="https://maps.google.com/?q=22+Avenida+4-32,+Ciudad+de+Guatemala"
+target="_blank">
+📍 Ver ubicación
+</a>
+
+<div class="map-container">
+<iframe
+src="https://maps.google.com/maps?q=22%20Avenida%204-32%20Ciudad%20de%20Guatemala&t=&z=16&ie=UTF8&iwloc=&output=embed">
+</iframe>
+</div>
+
+<p class="footer">
+"Gracias por ser mi lugar favorito ❤️"
+</p>
+
+</div>
+
+</section>
+
+<script>
+
+const targetDate = new Date("June 20, 2026 17:15:00").getTime();
+
+function updateCountdown(){
+
+const now = new Date().getTime();
+const distance = targetDate - now;
+
+const days = Math.floor(distance/(1000*60*60*24));
+const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+const seconds = Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+if(distance < 0){
+
+document.getElementById("days").innerHTML = "0";
+document.getElementById("hours").innerHTML = "0";
+document.getElementById("minutes").innerHTML = "0";
+document.getElementById("seconds").innerHTML = "0";
+
+}
+
+}
+
+setInterval(updateCountdown,1000);
+updateCountdown();
+
+</script>
+
+</body>
+</html>
