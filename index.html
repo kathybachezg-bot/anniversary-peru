@@ -394,10 +394,261 @@ height:300px;
 
 }
 
+/* ===== FONDO VINICUNCA ===== */
+
+.sunset-bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-10;
+
+background:
+linear-gradient(
+180deg,
+#0f1c52 0%,
+#3b2f72 20%,
+#a03a65 45%,
+#e37b52 70%,
+#ffb56b 100%
+);
+
+animation:sunsetShift 20s ease infinite alternate;
+}
+
+@keyframes sunsetShift{
+
+0%{
+filter:hue-rotate(0deg);
+}
+
+100%{
+filter:hue-rotate(15deg);
+}
+
+}
+
+/* ===== ESTRELLAS ===== */
+
+.stars{
+position:absolute;
+width:100%;
+height:100%;
+}
+
+.shooting-star{
+position:absolute;
+top:15%;
+left:-10%;
+width:180px;
+height:2px;
+
+background:
+linear-gradient(
+90deg,
+white,
+rgba(255,255,255,0)
+);
+
+transform:rotate(-20deg);
+
+animation:shooting 7s linear infinite;
+}
+
+.star2{
+top:25%;
+animation-delay:2s;
+}
+
+.star3{
+top:10%;
+animation-delay:4s;
+}
+
+.star4{
+top:35%;
+animation-delay:6s;
+}
+
+@keyframes shooting{
+
+0%{
+transform:
+translateX(0)
+translateY(0)
+rotate(-20deg);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:
+translateX(160vw)
+translateY(200px)
+rotate(-20deg);
+opacity:0;
+}
+
+}
+
+/* ===== MONTAÑAS VINICUNCA ===== */
+
+.mountains{
+
+position:absolute;
+bottom:0;
+width:100%;
+height:45%;
+
+background:
+linear-gradient(
+135deg,
+#7a1633 0%,
+#c45c4c 20%,
+#d9a441 35%,
+#55795e 50%,
+#91416d 65%,
+#b94638 80%,
+#5f2340 100%
+);
+
+clip-path:polygon(
+0 100%,
+15% 70%,
+30% 82%,
+45% 40%,
+60% 65%,
+75% 35%,
+100% 100%
+);
+
+filter:brightness(.9);
+}
+
+/* ===== GLOBO AEROSTÁTICO ===== */
+
+.hotair-balloon{
+
+position:absolute;
+
+right:8%;
+top:12%;
+
+width:180px;
+height:240px;
+
+background:
+radial-gradient(
+circle at 50% 30%,
+#ffdb99,
+#d93f3f 70%
+);
+
+border-radius:50% 50% 45% 45%;
+
+box-shadow:
+0 0 40px rgba(255,180,80,.5);
+
+animation:
+balloonFloat 8s ease-in-out infinite;
+}
+
+.hotair-balloon:before{
+
+content:"";
+
+position:absolute;
+bottom:-35px;
+left:50%;
+
+width:2px;
+height:35px;
+
+background:white;
+transform:translateX(-50%);
+}
+
+.basket{
+
+position:absolute;
+bottom:-55px;
+left:50%;
+
+width:40px;
+height:25px;
+
+background:#7b4b24;
+
+transform:translateX(-50%);
+
+border-radius:4px;
+}
+
+.balloon-name{
+
+position:absolute;
+
+top:35%;
+right:18px;
+
+font-size:.9rem;
+color:white;
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+opacity:.85;
+
+transform:rotate(-10deg);
+}
+
+@keyframes balloonFloat{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
 </style>
 </head>
 
 <body>
+
+  <div class="sunset-bg">
+
+  <div class="stars">
+    <span class="shooting-star"></span>
+    <span class="shooting-star star2"></span>
+    <span class="shooting-star star3"></span>
+    <span class="shooting-star star4"></span>
+  </div>
+
+  <div class="mountains"></div>
+
+  <div class="hotair-balloon">
+      <div class="balloon-name">
+          Katherine & Luis
+      </div>
+
+      <div class="basket"></div>
+  </div>
+
+</div>
 
 <div class="balloon balloon1">🎈</div>
 <div class="balloon balloon2">🎈</div>
@@ -495,13 +746,14 @@ Una experiencia inspirada en Perú para celebrar nuestro amor
 <h2>Mi Amor ❤️</h2>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt, nisi vel tristique vulputate, lectus purus faucibus sapien, vitae posuere odio erat vitae nunc.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Mi amor, estos tres años han sido el viaje más hermoso de mi vida. Cada sonrisa, cada aventura у cada instante a tu lado han convertido los días ordinarios en recuerdos extraordinarios. Hemos tenido tantas altas que cada vez como pareja nuestra relación se hace mas fuerte y quiera que no también hemos tenido bajas pero siempre las conversamos y eso ha echo que sea mas unida, te doy gracias por siempre querer hablar sobre ello, hemos realizado cambios de lo que no nos gusta.
+Gracias por tu amor incondicional, por tu paciencia infinita y por ser mi compañero en cada sueño.
+Admiro tu forma de ver la vida, tu corazón noble y la hermosa persona que eres.
+Quiero seguir construyendo momentos contigo, explorar nuevos lugares, superar desafios y cumplir cada meta que nos propongamos. Que este sea solo el comienzo de todo lo increíble que nos espera.
+Gracias por elegirme cada día, por amarme tal como soy y por hacerme la persona más feliz del mundo.
+Te amo hoy, mañana y siempre.
+Un viaje que continua. Tres años. Un amor infinito.
+Gracias por ser mi lugar seguro
 
 ❤️
 </p>
