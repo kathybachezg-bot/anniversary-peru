@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>3er Aniversario</title>
+<title>3er Aniversario ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -19,33 +19,41 @@ box-sizing:border-box;
 body{
 font-family:'Poppins',sans-serif;
 background:#faf8f5;
-color:#3a3a3a;
+color:#333;
 overflow-x:hidden;
 }
 
 .hero{
 min-height:100vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
-text-align:center;
-padding:40px 20px;
+padding:30px;
 background:
-linear-gradient(rgba(250,248,245,.95),rgba(250,248,245,.95)),
-url('https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1600&q=80');
+linear-gradient(rgba(250,248,245,.94),rgba(250,248,245,.94)),
+url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=2000&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
+}
+
+.card{
+max-width:900px;
+width:100%;
+background:white;
+padding:40px;
+border-radius:30px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+text-align:center;
 }
 
 .flag{
 width:120px;
 height:80px;
 display:flex;
-margin-bottom:20px;
-border-radius:8px;
+margin:0 auto 20px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
 .flag div:nth-child(1),
@@ -62,41 +70,31 @@ width:33.3%;
 h1{
 font-family:'Cormorant Garamond',serif;
 font-size:4rem;
-color:#9b1c1c;
-margin-bottom:10px;
+color:#a61c1c;
 }
 
 .subtitle{
+margin-top:10px;
 font-size:1.2rem;
-margin-bottom:25px;
 }
 
 .heart{
 font-size:2rem;
-margin:10px 0;
-color:#c53030;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:25px;
-max-width:900px;
-width:100%;
-box-shadow:0 10px 35px rgba(0,0,0,.08);
+margin:15px 0;
 }
 
 .info{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:35px;
 }
 
 .box{
 padding:20px;
-border:1px solid #eee;
 border-radius:15px;
+background:#fafafa;
+border:1px solid #eee;
 }
 
 .box h3{
@@ -107,16 +105,16 @@ margin-bottom:10px;
 .countdown{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:15px;
 flex-wrap:wrap;
-margin-top:25px;
+margin-top:30px;
 }
 
 .time{
 background:#fff5f5;
 padding:15px;
 border-radius:15px;
-min-width:100px;
+min-width:90px;
 }
 
 .number{
@@ -132,17 +130,35 @@ text-transform:uppercase;
 
 .btn{
 display:inline-block;
-margin-top:25px;
-padding:14px 28px;
+margin-top:30px;
+padding:15px 30px;
 background:#b22222;
 color:white;
 text-decoration:none;
 border-radius:50px;
+font-weight:500;
 transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-2px);
+transform:translateY(-3px);
+}
+
+.map-image{
+margin-top:30px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.map-image img{
+width:100%;
+display:block;
+}
+
+.footer{
+margin-top:35px;
+color:#777;
+font-style:italic;
 }
 
 .balloon{
@@ -150,8 +166,7 @@ position:fixed;
 right:5%;
 bottom:-150px;
 font-size:90px;
-animation:float 15s linear infinite;
-opacity:.9;
+animation:float 14s linear infinite;
 }
 
 @keyframes float{
@@ -159,27 +174,8 @@ opacity:.9;
 transform:translateY(0);
 }
 100%{
-transform:translateY(-120vh);
+transform:translateY(-130vh);
 }
-}
-
-.footer{
-margin-top:35px;
-font-style:italic;
-color:#777;
-}
-
-.map-container{
-margin-top:30px;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-iframe{
-width:100%;
-height:350px;
-border:none;
 }
 
 @media(max-width:768px){
@@ -188,26 +184,26 @@ h1{
 font-size:2.8rem;
 }
 
-.countdown{
-gap:10px;
-}
-
-.time{
-min-width:80px;
+.card{
+padding:25px;
 }
 
 .number{
 font-size:1.5rem;
 }
+
 }
 
 </style>
 </head>
+
 <body>
 
 <div class="balloon">🎈</div>
 
 <section class="hero">
+
+<div class="card">
 
 <div class="flag">
 <div></div>
@@ -218,14 +214,10 @@ font-size:1.5rem;
 <h1>3er Aniversario</h1>
 
 <p class="subtitle">
-Una experiencia inspirada en Perú para celebrar nuestro amor
+Una experiencia inspirada en Perú para celebrar nuestro amor 🇵🇪
 </p>
 
 <div class="heart">❤️</div>
-
-<div class="card">
-
-<h2>Comida en Globo Aerostático • Perú 🇵🇪</h2>
 
 <div class="info">
 
@@ -236,7 +228,12 @@ Una experiencia inspirada en Perú para celebrar nuestro amor
 
 <div class="box">
 <h3>🕔 Hora</h3>
-<p>17:15 a 18:45</p>
+<p>17:15 - 18:45</p>
+</div>
+
+<div class="box">
+<h3>🎈 Experiencia</h3>
+<p>Globo Aerostático</p>
 </div>
 
 <div class="box">
@@ -246,8 +243,9 @@ Una experiencia inspirada en Perú para celebrar nuestro amor
 
 <div class="box">
 <h3>📍 Lugar</h3>
-<p>CC Miraflores</p>
-<p>22 Avenida 4-32<br>Ciudad de Guatemala</p>
+<p><strong>Patio de Miraflores</strong></p>
+<p>Centro Comercial Miraflores</p>
+<p>Ciudad de Guatemala</p>
 </div>
 
 </div>
@@ -280,20 +278,27 @@ Una experiencia inspirada en Perú para celebrar nuestro amor
 
 </div>
 
-<a class="btn"
-href="https://www.google.com/maps/place/Centro+Comercial+Miraflores/@14.6205465,-90.5544661,17z/data=!4m6!3m5!1s0x8589a110e16ca3d3:0xc69355632110809e!8m2!3d14.6204267!4d-90.5542255!16s%2Fg%2F11q8g0q3l0"
-target="_blank">
-📍 Ver ubicación
+<a
+class="btn"
+target="_blank"
+href="https://www.google.com/maps/place/Centro+Comercial+Miraflores/@14.6205465,-90.5544661,17z/data=!4m6!3m5!1s0x8589a110e16ca3d3:0xc69355632110809e!8m2!3d14.6204267!4d-90.5542255!16s%2Fg%2F11q8g0q3l0">
+📍 Abrir ubicación
 </a>
 
-<div class="map-container">
-<iframe
-src="https://maps.google.com/maps?q=14.6204267,-90.5542255&z=17&output=embed">
-</iframe>
+<div class="map-image">
+
+<a
+target="_blank"
+href="https://www.google.com/maps/place/Centro+Comercial+Miraflores/@14.6205465,-90.5544661,17z/data=!4m6!3m5!1s0x8589a110e16ca3d3:0xc69355632110809e!8m2!3d14.6204267!4d-90.5542255!16s%2Fg%2F11q8g0q3l0">
+
+<img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1400&auto=format&fit=crop" alt="Mapa ubicación">
+
+</a>
+
 </div>
 
 <p class="footer">
-"Gracias por ser mi lugar favorito y seguro ❤️"
+"Gracias por ser mi lugar favorito ❤️"
 </p>
 
 </div>
@@ -302,17 +307,17 @@ src="https://maps.google.com/maps?q=14.6204267,-90.5542255&z=17&output=embed">
 
 <script>
 
-const targetDate = new Date("June 20, 2026 17:15:00").getTime();
+const targetDate = new Date("2026-06-20T17:15:00-06:00").getTime();
 
 function updateCountdown(){
 
 const now = new Date().getTime();
 const distance = targetDate - now;
 
-const days = Math.floor(distance/(1000*60*60*24));
-const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
-const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
-const seconds = Math.floor((distance%(1000*60))/1000);
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 document.getElementById("days").innerHTML = days;
 document.getElementById("hours").innerHTML = hours;
@@ -330,8 +335,8 @@ document.getElementById("seconds").innerHTML = "0";
 
 }
 
-setInterval(updateCountdown,1000);
 updateCountdown();
+setInterval(updateCountdown,1000);
 
 </script>
 
